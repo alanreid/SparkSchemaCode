@@ -19,7 +19,7 @@ spark-shell --jars target/scala-2.10/schemacode-assembly-0.1.0.jar
 
 **Driver Parameters:**
 ```
-SchemaCodeDriver <className> <inputfile> <inputfile>
+SchemaCodeDriver <className> <inputfile> <outputfile>
 ```
 
 **Running SchemaCodeDriver:**
