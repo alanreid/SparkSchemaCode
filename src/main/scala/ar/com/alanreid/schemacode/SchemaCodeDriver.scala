@@ -15,7 +15,7 @@ object SchemaCodeDriver extends App {
   implicit def schemaAsCode(dataframe: DataFrame) = new SchemaAsCode(dataframe)
 
   if(args.length != 3) {
-    println("Usage: SchemaCodeDriver <className> <inputfile> <outputfile>")
+    println("Usage: SchemaCodeDriver <className> <inputFile> <outputFile>")
     sys.exit(1)
   }
 
