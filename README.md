@@ -1,5 +1,17 @@
 # Spark SchemaCode
-SchemaCode is an **experimental** utility to generate Scala classes from a Spark DataFrame's schema
+SchemaCode is an **experimental** utility to generate Scala classes from a Spark DataFrame's schema.
+
+**Driver Parameters:**
+```
+SchemaCodeDriver <className> <inputFile> <outputFile>
+```
+
+**Parameters:**
+
+1. `className` is the name of the base class. Eg: If your dataset contains tweets, "Tweet" might be a good name.
+2. `inputFile` is the path to the dataset.
+3. `outputFile` is the path for the scala file that will be generated.
+
 
 ## Using SchemaCode
 **Installing the required tools**
@@ -15,11 +27,6 @@ sbt assembly
 **Using SchemaCode with Spark-Shell**
 ```
 spark-shell --jars target/scala-2.10/schemacode-assembly-0.1.0.jar
-```
-
-**Driver Parameters:**
-```
-SchemaCodeDriver <className> <inputfile> <outputfile>
 ```
 
 **Running SchemaCodeDriver:**
