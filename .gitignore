@@ -1,0 +1,6 @@
+metastore_db
+data
+project/target
+project/project
+target
+derby.log
